@@ -18,7 +18,7 @@ func main() {
 	count:=0
 	count_recv:=0
 	lock:=sync.Mutex{}
-	addr, err := net.ResolveTCPAddr("tcp4", "192.168.1.100:8899")
+	addr, err := net.ResolveTCPAddr("tcp4", "localhost:8899")
 	handleErr(err)
 	receiver, err := net.DialTCP("tcp4", nil, addr)
 	handleErr(err)
