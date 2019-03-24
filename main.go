@@ -20,7 +20,7 @@ func main() {
 	handleErr(err)
 	receiver, err := net.DialTCP("tcp4", nil, addr)
 	handleErr(err)
-	fmt.Println("Connect to server,start dispatching!")
+	fmt.Println("Connect to server,start dispatching on port 8900!")
 	buffer:=make([]byte,1024)
 	ch:=make(chan struct{})
 	ch2:=make(chan struct{})
